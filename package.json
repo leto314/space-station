@@ -1,7 +1,7 @@
 {
   "name": "space-station",
   "version": "0.1.0",
-  "description": "Isometric floating-island space base, prototype for a cognitive training app",
+  "description": "Isometric floating-island space base built with three.js",
   "type": "module",
   "private": true,
   "license": "MIT",

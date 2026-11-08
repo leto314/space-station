@@ -1,7 +1,7 @@
 # Space Station
 
 An isometric floating-island space base, viewed in the browser with three.js.
-It is a prototype for the "your base grows as you train" screen of a cognitive training app.
+The scene is drawn in a square frame the width of a phone screen (390 x 390 CSS pixels).
 
 No install step: three.js and the models are included in the repository.
 

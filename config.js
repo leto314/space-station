@@ -2,8 +2,9 @@
 // Tests rely on these values, so change them here rather than in the code.
 
 export const CONFIG = {
-  // Size of the square scene view, in CSS pixels.
-  frame: { width: 640, height: 640, marginPx: 32 },
+  // Size of the square scene view, in CSS pixels: the width of a phone
+  // screen, so the island takes about half of the screen height.
+  frame: { width: 390, height: 390, marginPx: 12 },
 
   // The island is a square grid of cells. One cell = one terrain block.
   island: { cellsPerSide: 8 },
