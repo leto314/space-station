@@ -13,13 +13,22 @@ node serve.js
 
 Then open http://localhost:8080.
 
+Without Node, any static server works, for example:
+
+```bash
+python3 -m http.server 8080
+```
+
 ## Test
 
 ```bash
 npm test
 ```
 
-(or `node --test`; needs Node 18 or newer)
+(or `node --test`; needs Node 18 or newer, nothing to install)
+
+`tests/environment.test.js` checks the setup itself (Node version, vendored three.js,
+model files and licenses). Run the tests first in a new environment.
 
 ## Layout
 
