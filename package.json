@@ -1,0 +1,15 @@
+{
+  "name": "space-station",
+  "version": "0.1.0",
+  "description": "Isometric floating-island space base, prototype for a cognitive training app",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "node serve.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

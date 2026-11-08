@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Space Station</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js" } }
+  </script>
+</head>
+<body>
+  <main class="layout">
+    <aside class="panel">
+      <h1>Space Station</h1>
+
+      <label class="field">
+        Seed
+        <input id="seed" type="number" step="1">
+      </label>
+      <button id="reset" class="secondary">New base</button>
+
+      <h2>Add a building</h2>
+      <div id="add-buttons" class="buttons"></div>
+      <button id="add-random">Add random building</button>
+
+      <p id="message" class="message"></p>
+
+      <h2>Buildings</h2>
+      <ul id="buildings" class="list"></ul>
+    </aside>
+
+    <div id="frame" class="frame">
+      <canvas id="scene"></canvas>
+    </div>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

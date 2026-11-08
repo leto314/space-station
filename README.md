@@ -1,0 +1,41 @@
+# Space Station
+
+An isometric floating-island space base, viewed in the browser with three.js.
+It is a prototype for the "your base grows as you train" screen of a cognitive training app.
+
+No install step: three.js and the models are included in the repository.
+
+## Run
+
+```bash
+node serve.js
+```
+
+Then open http://localhost:8080.
+
+## Test
+
+```bash
+npm test
+```
+
+(or `node --test`; needs Node 18 or newer)
+
+## Layout
+
+| Path | Role |
+|---|---|
+| `config.js` | Shared settings: frame size, island size, cell size, camera |
+| `engine/` | Pure logic (island, catalog, base state, seeded random). No three.js, no DOM |
+| `render/` | three.js view: isometric camera, lights, model loading, drawing a base state |
+| `main.js`, `index.html`, `styles.css` | Control panel and wiring |
+| `assets/models/` | glTF models (CC0), see `CREDITS.md` |
+| `inspiration/` | Reference images for the look of the base |
+| `tests/` | Engine tests, run with `node --test` |
+| `vendor/three/` | three.js r170 and the addons in use |
+
+## Current state
+
+- The island is a flat 8 x 8 square of terrain blocks.
+- Four building types: habitat, greenhouse, solar array, landing pad.
+- "Add" puts a building on a random free cell (seeded, reproducible). Nothing else decides where it goes.
